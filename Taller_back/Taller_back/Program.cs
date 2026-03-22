@@ -87,10 +87,13 @@ builder.Services.AddSwaggerGen(options =>
 
 var app = builder.Build();
 
+// Saca esto del bloque "if"
+app.UseSwagger();
+app.UseSwaggerUI();
+
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    // Aquí solo cosas que realmente solo quieras en tu PC
 }
 
 app.UseHttpsRedirection();
