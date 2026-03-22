@@ -49,7 +49,8 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowViteApp", policy =>
     {
-        policy.WithOrigins("http://localhost:5173") 
+        policy.WithOrigins("http://localhost:5173")
+              .WithOrigins("https://tallerruta10.onrender.com")
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
@@ -98,7 +99,7 @@ app.UseHttpsRedirection();
 // Debe ir después de HttpsRedirection y antes de Authorization
 app.UseCors("AllowViteApp");
 
-app.UseAuthentication(); 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.UseStaticFiles();
