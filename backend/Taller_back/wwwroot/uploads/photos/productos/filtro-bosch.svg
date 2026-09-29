@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="can" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0f2d5e"/>
+      <stop offset="50%" stop-color="#1e40af"/>
+      <stop offset="100%" stop-color="#0a1f44"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg2)"/>
+  <!-- Oil Filter Cylinder -->
+  <rect x="135" y="55" width="130" height="175" rx="14" fill="url(#can)" stroke="#0f172a" stroke-width="3"/>
+  <!-- Top Seal Ring -->
+  <rect x="145" y="42" width="110" height="15" rx="5" fill="#334155" stroke="#1e293b" stroke-width="2"/>
+  <rect x="155" y="36" width="90" height="8" rx="4" fill="#dc2626"/>
+  <!-- Label Band -->
+  <rect x="135" y="95" width="130" height="85" fill="#ffffff"/>
+  <rect x="135" y="95" width="130" height="12" fill="#dc2626"/>
+  <rect x="135" y="168" width="130" height="12" fill="#dc2626"/>
+  <text x="200" y="132" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">BOSCH</text>
+  <text x="200" y="152" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#475569" text-anchor="middle">FILTRO PREMIUM</text>
+  <text x="200" y="272" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">KIT DE FILTROS AUTOMOTRICES</text>
+</svg>

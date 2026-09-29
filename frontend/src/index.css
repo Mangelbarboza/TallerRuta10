@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  min-height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#root {
+  height: 100%;
+}
+
+
+.sidebar-link {
+  display: flex; 
+  align-items: center;
+  padding: 12px 20px;
+  color: white; 
+  text-decoration: none; 
+  border-left: 4px solid transparent;
+  transition: all 0.2s ease;
+  margin-bottom: 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+.sidebar-link:hover {
+  background-color: rgba(255, 255, 255, 0.1); 
+  border-left: 4px solid #F21D2F; 
+}
+
+
+.sidebar-link.active {
+  background-color: #F21D2F;
+  border-left: 4px solid white; 
+  font-weight: bold;
+}
+/* Estilo para las fechas ocupadas */
+input[type="date"]:disabled {
+  background-color: yellow;
+}
+
+/* Estilo para las horas ocupadas */
+select option:disabled {
+  color: white;
+  background-color: red;
+}
